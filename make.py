@@ -38,12 +38,13 @@ SITE_SOURCES = {
     'debian-stable': 'debian stable main amd64',
     'debian-testing': 'debian testing main amd64',
     'ubuntu-focal': 'ubuntu focal main amd64',
-    'ubuntu-jammy': 'ubuntu jammy main amd64'
+    'ubuntu-jammy': 'ubuntu jammy main amd64',
+    'ubuntu-noble': 'ubuntu noble main amd64'
 }
 EXTRA_PACKAGES = [
     # ubuntu-jammy存在一些问题，需要补充如下的包
-    ('ubuntu mantic main amd64', ('libsasl2-2', 'libsasl2-modules', 'libsasl2-modules-db')),
-    ('ubuntu mantic main i386', ('libsasl2-2', 'libsasl2-modules', 'libsasl2-modules-db'))
+    ('ubuntu noble main amd64', ('libsasl2-2', 'libsasl2-modules', 'libsasl2-modules-db')),
+    ('ubuntu noble main i386', ('libsasl2-2', 'libsasl2-modules', 'libsasl2-modules-db'))
 ]
 
 CACHE = {}
