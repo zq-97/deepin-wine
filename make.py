@@ -23,16 +23,16 @@ BUILD_DIR = './build'
 OUTPUT = './repo/Packages'
 
 MIRRORS = {
-    'deepin': 'https://community-packages.deepin.com/deepin',
-    'deepin-store': 'https://com-store-packages.uniontech.com/appstore',
+    'deepin': 'https://community-packages.deepin.com/beige',
+    'deepin-store': 'https://com-store-packages.uniontech.com/appstorev23',
     'debian': 'https://mirrors.ustc.edu.cn/debian',
     'ubuntu': 'https://mirrors.ustc.edu.cn/ubuntu'
 }
 DEEPIN_SITE_SOURCE = '''
-    deepin apricot main non-free i386
-    deepin apricot main non-free amd64
-    deepin-store deepin appstore i386
-    deepin-store deepin appstore amd64
+    deepin beige main commercial community i386
+    deepin beige main commercial community amd64
+    deepin-store beige appstore i386
+    deepin-store beige appstore amd64
 '''
 SITE_SOURCES = {
     'debian-stable': 'debian stable main amd64',

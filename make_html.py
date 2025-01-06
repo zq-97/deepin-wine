@@ -1,5 +1,6 @@
 import html
 import datetime
+import zoneinfo
 
 import repo
 
@@ -26,5 +27,5 @@ with open(OUTPUT, 'wt') as f:
     f.write(before_t)
     for x in result:
         f.write(the_t % tuple(map(html.escape, x)))
-    update_time = (datetime.datetime.utcnow() + datetime.timedelta(hours=8)).strftime('%Y-%m-%d %H:%M:%S')
+    update_time = datetime.datetime.now(zoneinfo.ZoneInfo("Asia/Shanghai")).isoformat()
     f.write(after_t.replace('<!--update_time-->', update_time))
